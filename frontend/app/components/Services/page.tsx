@@ -37,7 +37,7 @@ const Page = () => {
 ];
 
     return (
-        <div className=" grid grid-cols-3 mt-[123px] gap-y-[2rem]">
+        <div className=" grid grid-cols-3 pt-[123px] gap-y-[2rem] services ">
        { cardInfo.map((card, index)=> <div key={index} className="align-center text-center w-[380px] h-[534px]  rounded-[20px] card">
            <Image src={card.imageURL} alt={card.title} width="300" height="400" className="w-[380px] h-[288px]"/>
             <div className="mt-[29px] flex flex-col gap-[25px]">

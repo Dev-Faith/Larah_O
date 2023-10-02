@@ -45,7 +45,7 @@ const Navbar = () => {
         borderRadius: "20px",
         backdropFilter: `blur(${boxShadow * 100}px)`
       }}>
-            <h1 className={`${zeyada.className} text-[var(--brown)] text-[40px] w-[302px] h-[30px] hover:cursor-pointer transition ease-in-out hover:translate-y-1 logo`}><Link href="/">EVENTS.byLarah_O</Link></h1>
+            <h1 className={`${zeyada.className} text-[var(--brown)] text-[40px] w-[302px] h-[30px] hover:cursor-pointer transition ease-in-out hover:translate-y-1 logo`}><Link href="/components/Hero">EVENTS.byLarah_O</Link></h1>
             <div className="flex gap-[20px] align-center justify-center">
                 <ul className="flex gap-[30px] align-center justify-center">
                     <li className={`${pathname=="/components/Services" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/Services">Services</Link></li>
@@ -55,8 +55,8 @@ const Navbar = () => {
                     <li className={`${pathname=="/components/Contact" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/Contact">Contact</Link></li>
                 </ul>
                 <div className="flex gap-[30px] ml-[4rem] ">
-                    <button className="bg-[var(--gold)] w-[133px] h-[42px] text-center align-center rounded-[10px] text-[var(--white)] transition ease-in-out delay-5 hover:scale-110 duration-300 hover:bg-[var(--deep-gold)]">Login</button>
-                    <button className="w-[133px] h-[42px] rounded-[10px] border-[var(--gold)] border-[1px] text-[var(--gold)] transition ease-in-out delay-5  hover:scale-110 duration-300 hover:text-[var(--deep-gold)] hover:border-[var(--deep-gold)]">Sign Up</button>
+                    <Link href="/Login"><button className="bg-[var(--gold)] w-[133px] h-[42px] text-center align-center rounded-[10px] text-[var(--white)] transition ease-in-out delay-5 hover:scale-110 duration-300 hover:bg-[var(--deep-gold)]">Login</button></Link>
+                    <Link href="/components/Sign-up"><button className="w-[133px] h-[42px] rounded-[10px] border-[var(--gold)] border-[1px] text-[var(--gold)] transition ease-in-out delay-5  hover:scale-110 duration-300 hover:text-[var(--deep-gold)] hover:border-[var(--deep-gold)]">Sign Up</button></Link>
                 </div>
             </div>
         </nav>

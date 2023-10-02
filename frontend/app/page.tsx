@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import { Poppins } from "next/font/google";
-import Hero from "./components/Hero/page";
-import Services from './components/Services/page';
+
+import Login from "./Login/page";
 
 
 export default function Home() {
   return (
-    <main className= "">
-      <Hero />
+    <main>
+      <Login />
     </main>
   )
-}
+};

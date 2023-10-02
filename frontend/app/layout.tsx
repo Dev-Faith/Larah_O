@@ -32,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
-        <Navbar />
         {grocerries.map((groc, i) => <Image key={i} src={groc} alt={groc} className={`groc-${i} fixed`} />)}
         {children}
       </body>
