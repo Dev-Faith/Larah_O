@@ -1,0 +1,43 @@
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  position: relative;
+}
+
+li:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+   background-color:var(--brown);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+li.active:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: var(--brown);
+}
+
+nav {
+  transform: translateY(-30px);
+}
