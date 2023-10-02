@@ -49,9 +49,9 @@ const Navbar = () => {
                 <ul className="flex gap-[30px] align-center justify-center">
                     <li className={`${pathname=="/components/Services" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/Services">Services</Link></li>
                     <div className="h-[33px] w-[1px] bg-[var(--black)]"></div>
-                    <li className={`${pathname=="/about" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/About">About Us</Link></li>
+                    <li className={`${pathname=="/components/About" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/About">About Us</Link></li>
                      <div className="h-[33px] w-[1px] bg-[var(--black)]"></div>
-                    <li className={`${pathname=="/contact" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/Contact">Contact</Link></li>
+                    <li className={`${pathname=="/components/Contact" ? "active" :""} text-[20px] hover:font-bold`}><Link href="/components/Contact">Contact</Link></li>
                 </ul>
                 <div className="flex gap-[30px] ml-[4rem] ">
                     <button className="bg-[var(--gold)] w-[133px] h-[42px] text-center align-center rounded-[10px] text-[var(--white)] transition ease-in-out delay-5 hover:scale-110 duration-300 hover:bg-[var(--deep-gold)]">Login</button>
