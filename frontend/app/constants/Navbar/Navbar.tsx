@@ -35,6 +35,7 @@ const Navbar = () => {
     }
   }, [clientWindowHeight]);
     
+  
 
     return ( 
         <nav className="flex gap-[105px] p-0 align-center fixed" style={{
